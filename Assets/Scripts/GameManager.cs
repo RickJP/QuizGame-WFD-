@@ -16,11 +16,11 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         LoadQuestions();
-        foreach (var question in Questions)
-        {
-            Debug.Log(question.Info);
-        }
-        //Display();  
+
+        var seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
+        UnityEngine.Random.InitState(seed);
+
+        Display();  
     }
 
 

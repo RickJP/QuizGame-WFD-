@@ -1,17 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
-[System.Serializable]
+[Serializable()]
 public struct Answer
 {
-    [SerializeField]
-    private string info;
+    [SerializeField] private string info;
     public string Info { get { return info; } }
 
-    [SerializeField]
-    private bool _isCorrect;
+    [SerializeField] private bool _isCorrect;
     public bool IsCorrect { get { return _isCorrect; } }
 }
 
@@ -21,8 +20,7 @@ public class Question : ScriptableObject
 
     public enum AnswerType { Multi, Single }
 
-    [SerializeField]
-    private string info = string.Empty;
+    [SerializeField] private string info = string.Empty;
     public string Info { get { return info; } }
 
     [SerializeField] Answer[] answers = null;

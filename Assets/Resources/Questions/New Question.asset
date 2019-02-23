@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb456d947f334ce3b138e5ac9e13175, type: 3}
   m_Name: New Question
   m_EditorClassIdentifier: 
-  info: 
-  answers: []
+  info: Which animal is the fastest?
+  answers:
+  - info: Cheetah
+    _isCorrect: 0
+  - info: Lion
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 0

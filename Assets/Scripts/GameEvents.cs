@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GameEvents", menuName = "Quiz/new GameEvents")]
-public class GameEvents : MonoBehaviour
+public class GameEvents : ScriptableObject
 {
     public delegate void UpdateQuestionUICallback(Question question);
     public UpdateQuestionUICallback UpdateQuestionUI;
@@ -17,5 +17,6 @@ public class GameEvents : MonoBehaviour
     public delegate void ScoreUpdateCallback();
     public ScoreUpdateCallback ScoreUpdated;
 
+    [HideInInspector]
     public int CurrentFinalScore;
 }

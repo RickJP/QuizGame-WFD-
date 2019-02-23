@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: New
   m_EditorClassIdentifier: 
   info: 8X8=?
-  answers: []
+  answers:
+  - info: 49
+    _isCorrect: 0
+  - info: 54
+    _isCorrect: 0
+  - info: 64
+    _isCorrect: 1
   _useTimer: 0
   _timer: 0
   _answerType: 0
